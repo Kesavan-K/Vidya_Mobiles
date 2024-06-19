@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Manual</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   -->
+
+
+    <style>
+        body {
+            font-size: 20px;
+            background-color: #f9fcff;
+            background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+        }
+
+        .all {
+            margin-top: 120px;
+        }
+
+        #div>h1 {
+            position: fixed;
+            top: 0px;
+            width: 100%;
+        }
+
+        div>h1 {
+            font-size: 10px;
+            text-align: center;
+            background: linear-gradient(to right, grey, black);
+            color: white;
+            padding: 20px;
+        }
+
+        i {
+            color: ghostwhite;
+
+        }
+
+        ul {
+            font-size: 20px;
+            list-style-type: square;
+        }
+
+        #div1 {
+            margin-top: 30px;
+        }
+
+        #div1>p {
+            margin-top: 20px;
+            font-size: 20px;
+            text-decoration: capitalize;
+            text-indent: 0.5em;
+
+        }
+
+        b {
+            background: linear-gradient(grey, black);
+            display: inline-block;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #div2>p {
+            font-size: 20px;
+            text-indent: 0.5em;
+        }
+
+        #div3>p {
+            text-indent: 0.5em;
+        }
+
+        #div4>p {
+            background-color: #0C133B;
+            color: white;
+            padding: 5px;
+            text-indent: 0.5em;
+            border-radius: 5px;
+            text-align: justify;
+            font-style: bold;
+        }
+
+        #div4>ul>li>a {
+            color: black;
+            margin-left: 10px;
+            text-align: justify;
+            text-align-last: start;
+        }
+
+        #div4>ul>p {
+            max-width: 350px;
+            margin-left: 30px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;
+            font-family:
+        }
+
+        #div4>ul>li>i {
+            color: #0C133B;
+            margin-left: 8px;
+        }
+
+        #div5>p {
+            margin-left: 10px;
+            text-indent: 1em;
+        }
+
+        #div6>p {
+            margin-left: 10px;
+            text-indent: 1em;
+        }
+
+        #btn {}
+
+        /*
+   #btn>a{
+     color: white;
+     text-decoration: none;
+   }
+   #btn:hover{
+   
+     transition-timing-function: ease-in;
+     box-shadow: 5px 5px #0C133B;
+     cursor: pointer;
+   }*/
+        #btn {
+            background: linear-gradient(to right, grey, black);
+            box-shadow: 0px 4px 4px;
+            border-radius: 8px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            transition: transform 50ms;
+        }
+
+        #btn>a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #btn:active {
+            transform: translateY(4px);
+            box-shadow: 5px 5px 7px black;
+
+        }
+
+        @media (max-width: 700px) {
+            img {
+                display: none;
+            }
+        }
+
+        @media (min-width: 800px) {
+            img {
+                display: block;
+                float: right;
+                position: sticky;
+                border: 1px solid grey;
+                border-radius: 10px;
+                margin-top: 90px;
+                margin-right: 10px;
+                margin-left: 10px;
+                width: 300px;
+                height: 300px;
+
+            }
+
+            img:hover {
+
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-lg-12" id="div">
+        <h1 class="display-3"><i class="fa fa-globe"></i> Welcome To Echo Globe!!</h1>
+        <div class="all">
+            <div class="container" id="div1">
+                <b class="h1">About EG:</b>
+                <hr>
+                <p>Echo-Globe is a web-based chat application that allows you to create and join chat rooms to exchange
+                    text messages, photos, videos, and files in real-time. Your privacy and security are our top
+                    priority, and we've designed Echo-Globe with the following user-friendly features:</p>
+                <ul>
+                    <li><b>No Personal Details Required:</b> Your privacy is respected! Echo-Globe doesn't ask for any
+                        personal information, such as phone number or email, so you can chat anonymously and securely.
+                    </li>
+
+                    <li><b>Real-Time Communication:</b> Stay connected with friends and colleagues through seamless
+                        real-time messaging and file sharing.</li>
+
+                    <li><b>No Message Storage:</b> Your messages and files are not stored anywhere. Once your chat
+                        session is over, the data is permanently deleted, ensuring your conversations are private.</li>
+                </ul>
+            </div>
+            <div class="container" id="div2">
+                <b class="h1">Getting Started:</b>
+                <hr>
+                <p>Using Echo-Globe is a breeze! Just follow these simple steps to get started:</p>
+                <ol>
+                    <li>Open your web browser and visit the <a href="echoglobe.github.io"
+                            style="text-decoration: none;"><i style="color: blue;">EchoGlobe.github.io </i></a> website.
+                    </li>
+                    <li>If you're a new user, click on the "Create Room" button. Enter your name and a unique room ID to
+                        create a new chat room.</li>
+                    <li>If you want to join an existing chat room, click on the "Join Room" button. Enter your name and
+                        the room ID provided by the room creator.</li>
+                    <li>Once inside the chat room, you can start sending messages and files to other participants in
+                        real-time.</li>
+                </ol>
+            </div>
+            <div class="container" id="div3">
+                <b class="h1">Chat Room Features:</b>
+                <hr>
+                <p>Echo-Globe's chat room is packed with useful features to enhance your communication experience:</p>
+                <ul>
+                    <li><b>Text Messaging:</b> Enjoy lively conversations with instant text messaging.</li>
+                    <li><b>Photos and Videos:</b> Share special moments with friends by uploading photos and videos.
+                    </li>
+                    <li><b>Files:</b> Easily share files with other participants by uploading them to the chat room.
+                    </li>
+                </ul>
+            </div>
+            <div class="container" id="div4">
+                <b class="h1">Future Updates And Requirements:</b>
+                <hr>
+                <p>To know more information about the Future Updates and the Requirements,click on the Text Below!!!</p>
+                <img src="Pic1.jpeg" alt="Format Image" title="Upcoming Updates.." />
+
+                <ul class="list-unstyled">
+                    <li> <i class="fa-solid fa-message"></i> <a href="#box1" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;"> Advanced Text Messaging</a></li>
+                    <p class="collapse" id="box1">Edit, delete, copy,and replay messages for better communication.</p>
+
+                    <li> <i class="fa-solid fa-file-audio"></i> <a href="#box2" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Audio Messaging </a></li>
+                    <p class="collapse" id="box2">Record and playback audio messages for quick communication.</p>
+
+                    <li><i class="fa-solid fa-desktop"></i> <a href="#box3" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Screen Sharing</a></li>
+                    <p class="collapse" id="box3">Collaborate efficiently with others by sharing your screen for
+                        presentations and teamwork.</p>
+
+                    <li> <i class="fa-solid fa-phone"></i> <a href="#box4" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none; color: black;">Audio and Vedio Calls</a></li>
+                    <p class="collapse" id="box4"> Connect face-to-face with participants through audio and video calls
+                        right from the chat room.</p>
+
+                    <li> <i class="fa-solid fa-user-group"></i> <a href="#box5" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Multiple Participants</a></li>
+                    <p class="collapse" id="box5"> Invite multiple users to join the same chat room for engaging group
+                        discussions.</p>
+
+                    <li> <i class="fa-solid fa-language"></i> <a href="#box6" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Text to Speech</a></li>
+                    <p class="collapse" id="box6">Conveniently convert text messages to speech for easy listening.</p>
+
+                    <li> <i class="fa-solid fa-face-smile"></i> <a href="#box7" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Emoji Reactions and Stickers</a></li>
+                    <p class="collapse" id="box7">Express yourself with a range of emojis and fun stickers to enrich
+                        your conversations.</p>
+
+                    <li> <i class="fa-solid fa-wifi"></i> <a href="#box8" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Wifi Group Messaging:</a></li>
+                    <p class="collapse" id="box8"> Chat over Wi-Fi connections for seamless and reliable communication.
+                    </p>
+
+                    <li> <i class="fa-solid fa-file-export"></i> <a href="#box9" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Local Network File Sharing</a></li>
+                    <p class="collapse" id="box9"> Share files directly with participants on the same local network.</p>
+
+                    <li><i class="fa-solid fa-chalkboard"></i> <a href="#box10" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Whiteboard</a></li>
+                    <p class="collapse" id="box10">Collaborate creatively with a shared whiteboard for drawing and
+                        annotations.</p>
+
+                    <li><i class="fa-solid fa-plane"></i> <a href="#box11" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Local Network Offline Messaging:</a></li>
+                    <p class="collapse" id="box11">Continue sending messages even without internet access within the
+                        local network.
+                    </p>
+
+                    <li><i class="fa-solid fa-house-lock"></i> <a href="#box12" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">End to End Encryption</a></li>
+                    <p class="collapse" id="box12"> Ensure your conversations are fully secure with end-to-end
+                        encryption.</p>
+
+                    <li> <i class="fa-solid fa-video"></i><a href="#box13" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Group Video Conferencing</a></li>
+                    <p class="collapse" id="box13"> Organize video conferences with multiple participants in a chat
+                        room.</p>
+
+                    <li><i class="fa-solid fa-cloud"></i> <a href="#box14" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Integration With Cloud Services</a></li>
+                    <p class="collapse" id="box14">Easily share files from your cloud storage directly in the chat room.
+                    </p>
+
+                    <li> <i class="fa-solid fa-wand-magic-sparkles"></i> <a href="#box15" data-bs-toggle="collapse"
+                            type="button" style="text-decoration: none;">Custom Themes</a></li>
+                    <p class="collapse" id="box15">Personalize your chat room with a variety of custom themes and color
+                        schemes.</p>
+
+                    <li> <i class="fa-solid fa-bell"></i> <a href="#box16" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Reply Notifications</a></li>
+                    <p class="collapse" id="box16">Get notified when someone replies to your messages.</p>
+
+                    <li> <i class="fa fa-paper-plane" aria-hidden="true"></i> <a href="#box17" data-bs-toggle="collapse"
+                            type="button" style="text-decoration: none;">Message Translation</a></li>
+                    <p class="collapse" id="box17"> Translate messages into different languages for international
+                        communication.</p>
+
+                    <li> <i class="fa fa-user-secret" aria-hidden="true"></i> <a href="#box18" data-bs-toggle="collapse"
+                            type="button" style="text-decoration: none;">Enhanced Security Option</a></li>
+                    <p class="collapse" id="box18"> Enjoy additional security features like two-factor authentication.
+                    </p>
+
+                    <li> <i class="fa-solid fa-file-code"></i> <a href="#box19" data-bs-toggle="collapse" type="button"
+                            style="text-decoration: none;">Rich Message Formatting</a></li>
+                    <p class="collapse" id="box19">Add formatting to your messages, such as bold, italic, and lists.</p>
+
+                    <li> <i class="fa-solid fa-screwdriver-wrench"></i> <a href="#box20" data-bs-toggle="collapse"
+                            type="button" style="text-decoration: none;">Moderation Tools</a></li>
+                    <p class="collapse" id="box20">Empower chat room creators with tools to moderate discussions.</p>
+
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="container" id=div5>
+            <b class="h1">Leaving The Chat Room:</b>
+            <hr>
+            <p>Leaving the chat room is as simple as closing the browser tab or window. If you're the creator of the
+                room and you leave the chat, the room will be automatically deleted.</p>
+        </div>
+        <div class="container">
+            <b class="h1">Important Notes:</b>
+            <hr>
+            <ul>
+                <li>Keep your room ID secure, as it is the key to accessing the chat room.</li>
+                <li>
+                    If either the creator or joiner of the room leaves, the room will be automatically closed to
+                    maintain privacy and resource efficiency.</li>
+            </ul>
+        </div>
+        <div class="container" id="div6">
+            <b class="h1">Need Any Help? </b>
+            <hr>
+            <p>If you encounter any issues or have any questions, feel free to reach us.To submit your Feedback Click
+                Below ⬇
+            </p>
+            <center>
+                <button class="btn btn-primary text-center" id="btn"><a href="#"><i class="fa-solid fa-handshake"></i>
+                        Reach Us</a></button>
+            </center>
+            <br>
+        </div>
+    </div>
+
+    </div>
+    <!--
+<script>
+  let a=document.getElementById("a1")
+  let p=document.getElementById("p1")
+  let w=document.getElementById("mn")
+  j=2;
+  w.removeChild(p) 
+  a.addEventListener("click",()=>
+  {
+    if(j%2==0)
+    {
+      w.appendChild(p)
+    }
+    else
+    {
+      w.removeChild(p)
+    }
+    j++
+  })---->
+    </script>
+</body>
+
+</html>
